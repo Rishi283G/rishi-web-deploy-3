@@ -1,0 +1,112 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(to right, #0f0f0f, #2b2b2b);
+  color: white;
+  text-align: center;
+}
+
+/* Hero Section */
+#hero {
+  padding: 50px;
+  background: url("https://i.pinimg.com/originals/47/53/d7/4753d776ae8b2e1bd3ba05289ad27f8b.gif")
+    center/cover no-repeat;
+  color: #ffd700;
+  text-shadow: 2px 2px 5px black;
+}
+
+#hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  animation: glow 2s infinite alternate;
+}
+
+#hero p {
+  font-size: 1.5rem;
+}
+
+/* Favorite Games */
+#favorite-games {
+  padding: 50px 20px;
+}
+
+.game-card {
+  display: inline-block;
+  margin: 10px;
+  padding: 20px;
+  background: purple;
+  border-radius: 10px;
+  color: black;
+  font-weight: bold;
+  box-shadow: 0px 0px 10px 2px #ffd700;
+  transition: transform 0.3s, background 0.3s;
+  cursor: pointer;
+}
+
+.game-card:hover {
+  transform: scale(1.1);
+  background: #ffd700;
+  color: black;
+}
+
+/* Gaming Setup */
+#gaming-setup {
+  padding: 50px 20px;
+  background: #1b1b1b;
+  border-top: 2px solid purple;
+}
+
+#gaming-setup p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #ffd700;
+}
+
+/* Achievements */
+#achievements {
+  padding: 50px 20px;
+}
+
+#achievements ul {
+  list-style: none;
+  padding: 0;
+}
+
+#achievements li {
+  font-size: 1.2rem;
+  background: #2b2b2b;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 1px purple;
+}
+
+/* Connect Section */
+#connect {
+  padding: 50px 20px;
+  background: purple;
+  color: black;
+}
+
+#connect p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  padding: 10px;
+  background: #222;
+  color: #fff;
+}
+
+/* Animations */
+@keyframes glow {
+  from {
+    text-shadow: 0px 0px 5px #ffd700, 0px 0px 15px purple;
+  }
+  to {
+    text-shadow: 0px 0px 15px #ffd700, 0px 0px 30px purple;
+  }
+}

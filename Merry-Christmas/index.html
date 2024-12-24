@@ -14,13 +14,86 @@
       <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
       </nav>
     </header>
     <main>
       <div class="snow-container"></div>
       <h2>Celebrate the joy and warmth of Christmas!</h2>
+
+      <!-- Fun Facts Section -->
+      <section id="fun-facts">
+        <h3>Did You Know?</h3>
+        <ul>
+          <li>
+            The first Christmas tree was decorated in Riga, Latvia in 1510.
+          </li>
+          <li>Jingle Bells was originally written for Thanksgiving!</li>
+          <li>
+            Santa's reindeer were first named in 1823's "The Night Before
+            Christmas".
+          </li>
+        </ul>
+      </section>
+
+      <!-- Music Section -->
+      <section id="music">
+        <h3>Listen to a Christmas Carol!</h3>
+        <audio class="music2" controls>
+          <source class="on"
+            src="https://www.bensound.com/bensound-music/bensound-happyrock.mp3"
+            type="audio/mp3"
+          />
+          Your browser does not support the audio element.
+        </audio>
+      </section>
+
+      <!-- <section id="tree-section">
+    <h3>Decorate the Christmas Tree</h3>
+    <div class="tree-container">
+        <img src="images/christmas-tree.png" alt="Christmas Tree" class="interactive-tree">
+
+        Ornament Pool -->
+      <!-- <div id="ornament-pool">
+            <div class="ornament" draggable="true"></div>
+            <div class="ornament" draggable="true"></div>
+            <div class="ornament" draggable="true"></div>
+        </div>
+    </div>
+</section>
+
+
+  <section id="tree-section">
+    <h3>Decorate the Christmas Tree</h3>
+    <div class="tree-container">
+        <img src="images/christmas-tree.png" alt="Christmas Tree" class="interactive-tree">
+
+ Light Strings -->
+      <!-- <div class="light-string" id="lights-1"></div>
+        <div class="light-string" id="lights-2"></div>
+        <div class="light-string" id="lights-3"></div>
+
+        Button to Toggle Lights
+        <button id="toggle-lights">Turn On Lights</button>
+    </div>
+</section> -->
       <p>Enjoy the season of giving and love with your family and friends.</p>
+    </main>
+    <main>
+      <h2>Send Your Christmas Wishes!</h2>
+
+      <form
+        id="contactForm"
+        action="https://formspree.io/f/mnnnndyz"
+        method="POST"
+      >
+        <label class="label" for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required /><br />
+        <label class="label" for="message">Your Message:</label><br />
+        <textarea id="message" name="message" rows="4" required></textarea
+        ><br />
+        <!-- your other form fields go here -->
+        <button type="submit">Send</button>
+      </form>
     </main>
     <footer>
       <p>&copy; 2024 Christmas Wonderland</p>
